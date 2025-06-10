@@ -1,0 +1,7 @@
+.env
+# dependencies
+node_modules/
+# built CSS
+src/tailwind.css
+# lockfile (if you don’t want to commit it)
+package-lock.json
