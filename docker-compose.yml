@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: imdb_clone
+    ports:
+      - "5432:5432"
+    volumes:
+      - imdb_db_data:/var/lib/postgresql/data
+
+volumes:
+  imdb_db_data:
